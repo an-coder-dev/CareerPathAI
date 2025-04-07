@@ -1,0 +1,122 @@
+/* General Reset */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f4f4f9; /* Subtle background color */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Centering the Form */
+.signup-container {
+    max-width: 400px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Form Layout */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%; /* Ensures form takes full container width */
+}
+
+/* Input Group */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555555;
+    display: block;
+}
+
+/* Input Fields */
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    display: block; /* Ensures inputs are stacked vertically */
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* File Input */
+.input-group input[type="file"] {
+    border: none;
+    padding: 5px;
+}
+
+/* Submit Button */
+.btn {
+    padding: 12px;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #4e42e2;
+}
+
+.btn:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+/* Additional Styling for Links */
+.signup-container .link {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+.signup-container .link:hover {
+    text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

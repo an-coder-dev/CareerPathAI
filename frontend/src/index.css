@@ -1,0 +1,117 @@
+/* Reset Default Styles */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* General Styles */
+html, body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4; /* Light gray background for better contrast */
+  font-family: Arial, sans-serif;
+}
+
+/* Container Styling */
+.container {
+  background-color: #ffffff;
+  padding: 32px 48px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Heading */
+.container > h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Form Styling */
+.container > form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.container div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* Label Styling */
+label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+/* Input Fields */
+.container input {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Input Placeholder */
+.container input::placeholder {
+  font-size: 14px;
+  font-style: italic;
+  color: #888;
+}
+
+/* Input Focus Effect */
+.container input:focus {
+  border-color: #6a0dad; /* Purple highlight on focus */
+}
+
+/* Button Styling */
+button {
+  background-color: #6a0dad;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  padding: 12px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #4b0877;
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+/* Responsive Improvements */
+@media (max-width: 500px) {
+  .container {
+    padding: 24px;
+  }
+  
+  button {
+    font-size: 16px;
+  }
+}
+

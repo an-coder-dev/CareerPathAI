@@ -1,0 +1,135 @@
+/* Analyze.css */
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .career-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    min-height: 100vh;
+    background-color: #f4f6f8;
+  }
+  
+  .career-box {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    transition: 0.3s;
+  }
+  
+  .career-title {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  
+  .toggle-btn {
+    flex: 1;
+    padding: 10px;
+    margin: 0 5px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+  }
+  
+  .toggle-btn.active {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    transform: scale(1.02);
+  }
+  
+  .toggle-btn:hover {
+    background-color: #c2c2c2;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.2s;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+  }
+  
+  .submit-btn {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .result-box,
+  .error-box {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  .result-box {
+    background-color: #e6f4ea;
+    border-left: 6px solid #28a745;
+    color: #2e7d32;
+  }
+  
+  .error-box {
+    background-color: #fdecea;
+    border-left: 6px solid #dc3545;
+    color: #a94442;
+  }
+  
+  @media (max-width: 600px) {
+    .career-box {
+      padding: 20px;
+    }
+  
+    .toggle-btn {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .career-title {
+      font-size: 22px;
+    }
+  }
+  
